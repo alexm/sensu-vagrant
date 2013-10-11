@@ -1,6 +1,7 @@
-if ::ipaddress == '192.168.50.10' {
+node 'server' {
   include sensu::server
 }
-else {
+
+node 'client' {
   include sensu::client
 }
